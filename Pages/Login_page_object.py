@@ -12,7 +12,7 @@ class LoginPage:
         self.driver=driver
 
     ##Actions
-    def set_username(self,username):
+    def set_username(self,username):    
         uname=self.driver.find_element(By.NAME,self.txt_username_name)
         uname.send_keys(username)
 

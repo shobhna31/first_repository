@@ -3,6 +3,7 @@ import allure
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 @pytest.fixture()
+@allure.severity(allure.severity_level.CRITICAL)
 def setup(browser):
     if browser=="chrome":
         driver=webdriver.Chrome()
