@@ -1,0 +1,15 @@
+2025-07-23 17:15:58,938 - DEBUG - A debug statement is executed
+2025-07-23 17:15:58,938 - INFO - This is Information statement
+2025-07-23 17:15:58,938 - WARNING - Something is in warning mode
+2025-07-23 17:15:58,938 - ERROR - A major error has happened
+2025-07-23 17:15:58,938 - CRITICAL - Critical issue
+2025-07-23 17:22:17,755 - DEBUG - A debug statement is executed
+2025-07-23 17:22:17,756 - INFO - This is Information statement
+2025-07-23 17:22:17,756 - WARNING - Something is in warning mode
+2025-07-23 17:22:17,756 - ERROR - A major error has happened
+2025-07-23 17:22:17,757 - CRITICAL - Critical issue
+2025-07-23 17:32:18,716 - DEBUG - A debug statement is executed
+2025-07-23 17:32:18,716 - INFO - This is Information statement
+2025-07-23 17:32:18,717 - WARNING - Something is in warning mode
+2025-07-23 17:32:18,717 - ERROR - A major error has happened
+2025-07-23 17:32:18,717 - CRITICAL - Critical issue

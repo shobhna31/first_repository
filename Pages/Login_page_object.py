@@ -1,6 +1,10 @@
 import time
 from selenium import webdriver
+import allure
 from selenium.webdriver.common.by import By
+@allure.feature("OrangeHRM Forgot/Reset Password")
+@allure.story("Reset Password Success Page")
+@allure.severity(allure.severity_level.CRITICAL)
 class LoginPage:
     ##Element Locators
     txt_username_name="username"

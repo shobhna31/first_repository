@@ -43,7 +43,10 @@ def browser(request):
 
 ##adding hooks to generate the html reports
 
-@pytest.mark.optionalhook
+# @pytest.mark.optionalhook
+#
+
+@pytest.hookimpl(optionalhook=True)
 def pytest_metadata(metadata):
     metadata.pop("JAVA_HOME",None)
     metadata.pop("Plugins",None)
