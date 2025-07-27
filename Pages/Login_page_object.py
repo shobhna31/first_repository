@@ -1,4 +1,7 @@
 import time
+
+import pytest
+import pytest_html
 from selenium import webdriver
 import allure
 from selenium.webdriver.common.by import By
@@ -26,3 +29,22 @@ class LoginPage:
     def click_button(self):
         login=self.driver.find_element(By.XPATH,self.btn_login)
         login.click()
+
+
+    @pytest.mark.hookwrapper
+    def pytest_runtest_makereport(item):
+        outcome = yield
+        report = outcome.get_result()
+        if report.failed:
+            driver = item.funcargs['driver']
+            screenshot = driver.get_screenshot_as_base64()
+            report.extra = getattr(report, 'extra', [])
+            report.extra.append(pytest_html.extras.image(screenshot, mime_type='image/png'))
+
+
+    @pytest.fixture
+    def driver(self):
+        driver = webdriver.Chrome()
+        yield driver
+        driver.quit()
+

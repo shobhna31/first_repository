@@ -13,3 +13,8 @@
 2025-07-23 17:32:18,717 - WARNING - Something is in warning mode
 2025-07-23 17:32:18,717 - ERROR - A major error has happened
 2025-07-23 17:32:18,717 - CRITICAL - Critical issue
+2025-07-24 19:20:33,697 - DEBUG - A debug statement is executed
+2025-07-24 19:20:33,698 - INFO - This is Information statement
+2025-07-24 19:20:33,698 - WARNING - Something is in warning mode
+2025-07-24 19:20:33,698 - ERROR - A major error has happened
+2025-07-24 19:20:33,698 - CRITICAL - Critical issue
